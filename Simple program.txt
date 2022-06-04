@@ -1,0 +1,44 @@
+public class Box {
+    double l;
+    double h;
+    double w;
+
+    static void greeting(){
+        System.out.println("Hey, I am in Box class , Greeting ");
+    }
+
+    Box(){
+        this.h=-1;
+        this.l=-1;
+        this.w=-1;
+    }
+
+    Box(double l,double h){
+        this.l=1;
+        this.h=1;
+    }
+
+    public Box(double l, double h, double w) {
+        this.l = l;
+        this.h = h;
+        this.w = w;
+ public static void main(String[] args) {
+       /* Box box=new Box(1,2,3);
+        System.out.println(box.h + " " + box.l+ " " + box.w);*/
+
+        /*Box box1=new BoxWeight(1,2,4,67); // here we make the object of the child class (BoXWeight) because its have idea of all above classes
+        System.out.println(box1.h);*/
+
+
+       // BoxWeight box3=new Box(2,3,4); ERROR:  its showing error because  we create the object of parent class and its have no idea about the below classes
+
+      /*  BoxWeight rr=new BoxWeight(12,23,23,45);
+        System.out.println(rr.h+ " " + rr.l + " " +rr.w + " " + rr.weight);
+       */
+Box box=new BoxWeight();
+Box.greeting();
+
+    }
+
+    }
+
