@@ -1,0 +1,23 @@
+public class Main {
+    enum Week {
+        MONDAY, TUESDAY, WEDNESDAY, THURSDAY, FRIDAY, SATURDAY, SUNDAY;
+        // these are the enum constant
+        // type is week
+
+
+      /*  Week() {
+            System.out.println("constructor called for the same object "+ this);
+
+       }
+*/
+
+    }
+    public static void main(String[] args) {
+        Week week;
+//week=Week.SUNDAY;
+       // System.out.println(week.ordinal());
+        for(Week day: Week.values()) {
+            System.out.println(day);
+        }
+    }
+}
