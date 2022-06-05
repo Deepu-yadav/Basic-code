@@ -1,0 +1,12 @@
+public class OPERATORS {
+    public static void main(String[] args) {
+        System.out.println('a'+'b');  // here  a is 97 b is 98 and c is 99 after that like this 100,101,102,103,104,105,106,
+        System.out.println((char)  'a'+3); // 100
+
+        System.out.println("a" + "b"); // ab its Creation every time a new object
+
+        System.out.println("Deepu"+new ArrayList<>());
+        System.out.println("Kunal" + new Integer(300))
+
+    }
+}

@@ -1,0 +1,20 @@
+public class SHADOWING {
+
+  static int x=100; // this will be shadowing
+    public static void main(String[] args) {
+        System.out.println(x); // 100
+        int x=200;
+        System.out.println(x); // 200
+        fun();
+        VariableArgument(1,2,3,4,5,6,6,6,7,7,7,8,88,9,908,7,7,5,5,433,4,5,6,67);
+
+    }
+    static void fun(){
+        System.out.println(x); // 100
+    }
+    static void VariableArgument(int ...var) // it is the variable argument we can put a lot of value in this method
+    {
+        System.out.println(Arrays.toString(var));
+    }
+
+}
