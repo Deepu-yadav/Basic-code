@@ -1,0 +1,18 @@
+public class Function {
+    public static void main(String[] args) {
+        int a = 100;
+        int b = 200;
+        String name = "Deepu";
+
+        {
+            a = 200;
+            name="Rahul"; // here, reassign the original reference variable to some other value
+                         // in java everything happen through the pass  value not by the pass by  reference
+            int c=300;
+        }
+    //    System.out.println(c); // here we can't access the value of  c because it is in the  scope or scoping sector 
+        System.out.println(a); // 200
+        System.out.println(name); // Rahul
+
+    }
+}
